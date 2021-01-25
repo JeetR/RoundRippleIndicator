@@ -48,6 +48,11 @@
             >
 
         </Ellipse>
-
+        <Image 
+            x:Name="ImageCentral"
+            Width="40"
+            Height="40"
+            Source="{Binding CentralImageSource}"
+            />
     </Grid>
 </UserControl>

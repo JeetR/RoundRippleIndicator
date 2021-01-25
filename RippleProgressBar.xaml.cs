@@ -40,13 +40,35 @@ namespace RippleProgressBar
             }
         }
 
+        public Uri CentralImageSource
+        {
+            get
+            {
+                return (Uri)GetValue(CentralImageSourceProperty);
+            }
+            set
+            {
+                SetValue(CentralImageSourceProperty, value);
+            }
+
+        }
+
+        private static readonly DependencyProperty CentralImageSourceProperty = DependencyProperty.Register(nameof(CentralImageSource), typeof(Uri),
+            typeof(RippleProgressBar),
+            new PropertyMetadata(null, ImageSourceChangedCallback));
+
+        private static void ImageSourceChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            
+        }
+
         private static readonly DependencyProperty CircleColorProperty = DependencyProperty.Register(nameof(CircleColor), typeof(Brush), typeof(RippleProgressBar),
             
             new PropertyMetadata(Brushes.Gray,ColorChangedCallback));
 
         private static void ColorChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-                
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
