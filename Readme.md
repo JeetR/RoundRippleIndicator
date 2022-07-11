@@ -37,5 +37,7 @@ you could jsut enter the name of control 'RippleProgressBar' in XAML and visual 
 ### In case of any issues shoot an email at 
 #### ranjan.satyajeet2012@gmail.com
 
+#### Project executed with Determinant Studios (hey[at]determinantstudios.com)
+
 ##### Bluetooth Icon in sample code is from thenounproject.com 
 ####### Please check for terms and condition before using it in any thing other than personal builds. I am not responsible for any of their terms and conditions.
